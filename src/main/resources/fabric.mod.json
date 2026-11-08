@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "hanging-ladder",
+	"version": "${version}",
+	"name": "Hanging Ladder",
+	"description": "The mod improves ladder mechanics and allows players to leave ladders suspended in mid-air.",
+	"authors": [
+		"oreon_core"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/hanging-ladder",
+		"sources": "https://github.com/oreon-core/Hanging-Ladder"
+	},
+	"license": "MIT",
+	"icon": "assets/hanging-ladder/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.hangladder.HangingLadder"
+		]
+	},
+	"mixins": [
+		"hanging-ladder.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
